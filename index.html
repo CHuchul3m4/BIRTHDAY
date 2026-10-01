@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>PASSWORD</title>
+<style>
+body{
+  font-family: Arial;
+  margin:0;
+  background:#111;
+  color:white;
+}
+
+.login{
+  position:fixed;
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  background:#111;
+  z-index:10;
+}
+
+input{
+  padding:12px;
+  font-size:16px;
+  border-radius:6px;
+  border:none;
+  margin-top:10px;
+}
+
+button{
+  padding:10px 20px;
+  margin-top:10px;
+  border:none;
+  border-radius:6px;
+  background:lime;
+  color:black;
+  cursor:pointer;
+}
+
+.link{
+  display:none;
+  margin-top:20px;
+  padding:10px 20px;
+  background:lime;
+  color:black;
+  text-decoration:none;
+  border-radius:6px;
+}
+
+.site{
+  display:none;
+  padding:40px;
+  text-align:center;
+}
+
+#error{
+  color:red;
+  display:none;
+  margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="login">
+  <h3>BESTFRIEND[2026 updated]</h3>
+  <h2>Ingresa la contraseña</h2>
+  <input type="password" id="pass" placeholder="contraseña">
+  <button onclick="checkPassword()">Entrar</button>
+  <p id="error">Contraseña incorrecta</p></p>
+  <p>CJSUIEBZ</p>
+  
+  
+  
+
+  <div class="site" id="site">
+    <h1>buen trabajo, estas aprendiendo demasiado rapido sobre esto jejeje</h1>
+    <p>bueno te lo mereces</p>
+    <p>Espero que te guste ❤️</p>
+    <a class="link" id="link" href="./cumple.html">Entrar</a>
+  </div>
+</div>
+
+<script>
+function checkPassword() {
+  const correcta = "BIRTHDAY"; // cambia tu contraseña aquí
+  const escrita = document.getElementById("pass").value.trim(); // trim elimina espacios
+  const site = document.getElementById("site");
+  const errorMsg = document.getElementById("error");
+  const link = document.getElementById("link");
+
+  // ahora bloquea si está vacío o incorrecta
+  if(escrita === correcta && escrita !== ""){
+    errorMsg.style.display = "none";
+    site.style.display = "block";
+    link.style.display = "inline-block";
+  } else {
+    site.style.display = "none";
+    link.style.display = "none";
+    errorMsg.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
