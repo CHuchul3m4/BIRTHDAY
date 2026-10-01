@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>!!! Cumpleaños !!!</title>
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: #ff00cc;
+        color: #ffff00;
+        font-family: "Comic Sans MS", "Trebuchet MS", cursive;
+        overflow-x: hidden;
+    }
+
+    body {
+        background-image:
+            radial-gradient(#00ffff 2px, transparent 2px),
+            radial-gradient(#ffff00 2px, transparent 2px);
+        background-size: 20px 20px;
+        background-position: 0 0, 10px 10px;
+    }
+
+    .wrapper {
+        width: 760px;
+        margin: 20px auto;
+        background: #0000aa;
+        border: 8px ridge #ffffff;
+        padding: 10px;
+        position: relative;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 60px;
+        line-height: 0.9;
+        color: #ffff00;
+        text-shadow:
+            5px 5px #ff0000,
+            -4px -4px #00ffff;
+        transform: rotate(-2deg);
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 22px;
+        color: #00ff00;
+        background: #ff0000;
+        border: 4px dashed #ffff00;
+        padding: 5px;
+        transform: rotate(2deg);
+    }
+
+    .star {
+        position: absolute;
+        font-size: 50px;
+        color: #ffff00;
+    }
+
+    .star.one {
+        top: 20px;
+        left: 15px;
+        transform: rotate(20deg);
+    }
+
+    .star.two {
+        top: 80px;
+        right: 15px;
+        color: #00ffff;
+        transform: rotate(-20deg);
+    }
+
+    .star.three {
+        top: 300px;
+        left: -30px;
+        color: #ff0000;
+    }
+
+    .star.four {
+        bottom: 100px;
+        right: -20px;
+        color: #00ff00;
+    }
+
+    .weird {
+        background: #ffff00;
+        color: #ff0000;
+        border: 6px groove #00ffff;
+        padding: 12px;
+        margin: 25px 50px;
+        text-align: center;
+        font-size: 25px;
+        transform: rotate(-1deg);
+    }
+
+    .message {
+        background: #ffffff;
+        color: #000000;
+        border: 8px outset #c0c0c0;
+        padding: 20px;
+        margin: 20px 80px;
+        font-family: "Times New Roman", serif;
+        font-size: 19px;
+        transform: rotate(1deg);
+    }
+
+    .message h2 {
+        color: #ff00ff;
+        font-family: "Comic Sans MS", cursive;
+        text-align: center;
+    }
+
+    .sticker {
+        display: inline-block;
+        padding: 10px;
+        margin: 8px;
+        background: #00ff00;
+        color: #0000ff;
+        border: 5px outset #ffffff;
+        font-weight: bold;
+        transform: rotate(-5deg);
+    }
+
+    .sticker:nth-child(even) {
+        background: #ff6600;
+        color: #ffffff;
+        transform: rotate(5deg);
+    }
+
+    .sticker:nth-child(3n) {
+        background: #00ffff;
+        color: #ff0000;
+        transform: rotate(-2deg);
+    }
+
+    .photo {
+        width: 180px;
+        height: 180px;
+        background: #000000;
+        border: 10px ridge #c0c0c0;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+        transform: rotate(-4deg);
+    }
+
+    .photo:nth-of-type(even) {
+        transform: rotate(4deg);
+    }
+
+    .rainbow {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #ffffff;
+        background:
+            linear-gradient(
+                90deg,
+                red,
+                orange,
+                yellow,
+                lime,
+                cyan,
+                blue,
+                magenta
+            );
+        padding: 8px;
+        border: 4px dotted #ffffff;
+    }
+
+    .tiny {
+        font-family: "Courier New", monospace;
+        font-size: 11px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 40px;
+        color: #00ff00;
+    }
+
+    .blink {
+        animation: blink 0.6s infinite;
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    marquee {
+        background: #000000;
+        color: #00ff00;
+        border: 3px solid #00ff00;
+        font-family: "Courier New", monospace;
+        padding: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="star one">★</div>
+    <div class="star two">✦</div>
+    <div class="star three">★</div>
+    <div class="star four">✧</div>
+
+
+    <!-- TITULO -->
+
+    <div class="title">
+        FELIZ <br>
+        CUMPLEAÑOS!!!
+    </div>
+
+    <div class="subtitle">
+        ✨ SITIO PARA LA NOVIA MAS ESPECIAL ✨
+    </div>
+
+    <br>
+
+    <marquee>
+        ★★★ OMG!!! YA ES TU CUMPLEAÑOS 18!!! ★★★
+        &nbsp;&nbsp;&nbsp;
+        ✿ :3 ✿
+        &nbsp;&nbsp;&nbsp;
+        ★★★ YAY!!! ★★★
+    </marquee>
+
+
+    <!-- COSA RANDOM -->
+
+    <div class="weird">
+        ⚠️ FELIZ CUMPLEAÑOS ⚠️
+        <br>
+        FELIZ CUMPLEAÑOS DIANA, PASA UN DÍA INCREÍBLE Y LLENO DE COSAS BUENAS
+        TE QUIERO MUCHO, ESPERO QUE TE GUSTE ESTE SITIO HECHO CON MUCHO AMOR Y UN POCO DE HTML
+        MAL HECHO, PERO HECHO CON MUCHO AMOR AJAJAJA
+        <br>
+        <span class="blink">ZONA DE COMPLEAÑOS</span>
+        <br>
+        ⚠️ ⚠️ ⚠️
+    </div>
+
+
+    <!-- FOTO -->
+
+    <div class="photo">
+        <img src="assets/images/AFD24209-91E7-4A57-98B4-9D5D0F2F7397.jpg" alt="FOTO DE CUMPLEAÑOS" width="160" height="160">
+    </div>
+
+
+    <!-- MENSAJE -->
+
+    <div class="message">
+
+        <h2>
+            ♡ MENSAJE IMPORTANTISIMO ♡
+        </h2>
+
+        <p>
+            QUERIDA <b>Diana</b>,
+        </p>
+
+        <p>
+            ¡¡¡FELIZ CUMPLEAÑOS!!!
+        </p>
+
+        <p>
+            HOY ES UN DÍA MUY ESPECIAL, Y QUIERO QUE SEPAS QUE ERES UNA PERSONA INCREÍBLE.
+            HOY OFICIALMNENTE TE CONVIERTES EN UNA ADULTA, PERO NO TE PREOCUPES, TODAVÍA PUEDES SER JOVEN REALMENTE,
+            ES LO QUE TE ADVERTI, NO CAMBIA NADA, EXEPTO QUE AHORA PUEDES HACER COSAS DE ADULTA COMO
+            VOTAR, CONDUCIR, Y PAGAR IMPUESTOS (JAJAJA). LA VERDAD ES ES QUE NO IMPORTA LA EDAD IMPORTA COMO ENFRENTAS EL MUNDO
+            Y COMO TE DIVIERTES, Y SE QUE LO HACES BIEN, SIGUE SIENDO ESA PERSONA PORFAVOR, NO CAMBIES NUNCA, Y QUIERO QUE SEPAS , QUE 
+            NO IMPORTA SI TIENES 18, 30 O 67 AÑOS , SIEMPRE TE VOY A QUERER Y ESTARE ALLI PARA TI, SIEMPRE. EN LAS BUENAS Y EN LAS MALAS 
+            HAS DEMOSTRADO SER UNA PERSONA INCREIBLE, Y TE QUIERO MUCHO, Y ESPERO QUE ESTE DIA SEA INCREIBLE PARA TI, Y QUE LO DISFRUTES AL MAXIMO.
+            TE QUIERO MUCHO. HOY SERA UN DIA INCREIBLE :3
+        </p>
+
+        <p>
+            Espero que este día esté lleno de
+            cosas increíbles, pastel y probablemente
+            decisiones cuestionables. y aprovecha al máximo tu día,
+            porque es tuyo y solo tuyo. ¡Feliz cumpleaños!
+        </p>
+
+        <center>
+            <font color="#ff0000">
+                ★★★★★
+            </font>
+        </center>
+
+    </div>
+
+
+    <!-- STICKERS -->
+
+    <div style="text-align:center;">
+
+        <span class="sticker">
+            TE QUIERO MUCHO!!!
+        </span>
+
+        <span class="sticker">
+            FELIZ CUMPLEAÑOS!!!
+        </span>
+
+        <span class="sticker">
+            FELIZ DIA!!!
+        </span>
+
+        <span class="sticker">
+            BENDICIONES
+        </span>
+
+        <span class="sticker">
+            NO SE QUE PONER
+        </span>
+
+    </div>
+
+
+    <br>
+
+
+    <!-- SEPARADOR ABSURDO -->
+
+    <div class="rainbow">
+        ★ ☆ ★ ☆ ★ ☆ ★ ☆ ★ ☆ ★
+    </div>
+
+
+    <!-- COSAS -->
+
+    <div class="message">
+
+        <h2>
+            ★ COSITAS SOBRE TI ★
+        </h2>
+
+        <ul>
+            <li>Le gusta: de todo un poco, y ser floja </li>
+            <li>Su color favorito: marron, blanco,rosa</li>
+            <li>Su animal favorito: gato</li>
+            <li>Su hobby: ver tiktok </li>
+            <li>Su serie favorita: Mob Psycho 100</li>
+            <li>Su juego favorito: juega usualmente roblox</li>
+            <li>Su comida favorita: frutas </li>
+            <li>Su bebida favorita: juguitos de frutas</li>
+            <li>Su lugar favorito: posiblemente donde nos conocimos</li>
+            <li>Escucha: de todo un poco </li>
+        </ul>
+
+    </div>
+
+
+    <!-- FOTO RANDOM -->
+
+    <div class="photo">
+        <img src="assets/images/f450cf4c-8c4e-43c7-94c6-e7dc63f7c60b.jpg" alt="FOTO DE CUMPLEAÑOS" width="160" height="160">
+    </div>
+
+
+    <div class="weird">
+
+        ★★★
+        <span class="blink">
+            FELIZ CUMPLEAÑOS DIANA!!!!
+        </span>
+        ★★★
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        <p>
+            ♡ hecho con amor y un poco de html♡
+        </p>
+        <p class="tiny">
+            (c) 2026 - DIANA'S BIRTHDAY SITE ( bestfriend project ) - todos los derechos reservados
+        </p>
+    </div>
+        <div class="weird">
+
+        ★★★
+        <span class="blink">
+            POR CIERTO , TE TENGO PREPARADO UN REGALITO ESPERO QUE TE GUSTE, ES ALGO PEQUEÑO QUE TE ENVIARE CUANDO TENGAS TIEMPO
+            TE QUIERO MUCHO, Y ESPERO QUE TE GUSTE, ES ALGO QUE HICE CON MUCHO AMOR PARA TI, Y ESPERO QUE TE GUSTE, Y QUE LO DISFRUTES
+        </span>
+        ★★★
+
+    </div>
+
+</div>
+
+</body>
+</html>
